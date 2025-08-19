@@ -1,0 +1,29 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "shell",
+			"label": "Scaffold Next.js frontend with TypeScript, Tailwind CSS, ESLint, and App Router",
+			"command": "npx create-next-app@latest . --ts --tailwind --eslint --app",
+			"group": "build"
+		},
+		{
+			"label": "Start Next.js frontend",
+			"type": "shell",
+			"command": "npm run dev",
+			"group": "build",
+			"presentation": {
+				"reveal": "always"
+			}
+		},
+		{
+			"label": "Start FastAPI backend",
+			"type": "shell",
+			"command": "uvicorn backend.main:app --reload",
+			"group": "build",
+			"presentation": {
+				"reveal": "always"
+			}
+		}
+	]
+}

@@ -1,0 +1,4 @@
+pycache/ *.pyc .env .env venv/
+node_modules/ .next/ dist/ .env.local
+.DS_Store *.log *.sqlite3
+		
